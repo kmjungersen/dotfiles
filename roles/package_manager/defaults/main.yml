@@ -1,2 +1,2 @@
 package_update: yes
-package_upgrade: yes
+package_upgrade: no
