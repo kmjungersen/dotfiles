@@ -5,3 +5,6 @@ localhost
 ansible_connection=local
 
 [remote]
+192.168.33.21
+192.168.33.22
+192.168.33.23
