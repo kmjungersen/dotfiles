@@ -2,6 +2,6 @@
 
 - name: Make sure zsh is installed
   homebrew: name=zsh state=latest
-
-- name: Change default shell to zsh
-  command: chsh -s /usr/local/bin/zsh
+#
+#- name: Change default shell to zsh
+#  command: chsh -s /usr/local/bin/zsh
