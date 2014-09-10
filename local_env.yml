@@ -9,7 +9,7 @@
     - package_manager
     - zsh
     - vim
-    - python
+#    - python
     - hub
     - autojump
     - autoenv
