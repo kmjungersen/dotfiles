@@ -1,4 +1,7 @@
 
+- name: install some libselinux
+  yum: name="libselinux-python" state=present
+
 - name: Install git with yum
   yum: name=git state=latest
   sudo: yes
