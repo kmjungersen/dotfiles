@@ -8,16 +8,19 @@
   tasks:
     # The dotfiles must be cloned to the remote location so that all *.zsh files
     # and symlinks are present
+    - name: install git
+      yum: name=git state=installed
+
     - name: Clone dotfiles repo
       git:
-        repo: https://github.com/asmacdo/dotfiles.git
+        repo: https://github.com/kmjungersen/dotfiles.git
         dest: "{{dotfiles_user_home}}/dotfiles"
 
 - name: Set up remote development environments (roles)
   hosts: remote
   # No prezto, minimal vimrc
   vars:
-    zsh_prezto: no
+    zsh_prezto: yes
     vim_minimal: yes
   roles:
     - git
