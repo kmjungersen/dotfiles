@@ -9,12 +9,11 @@ alias mn="python manage.py"
 alias wp="which python"
 
 # Conda environments
-alias mkenv3="conda create python=3 ipython pip -n "
-alias mkenv="conda create python=2 ipython pip -n "
-alias lsenv="conda info -e"
-alias wo="source activate"
+#alias mkenv3="conda create python=3 ipython pip -n "
+#alias mkenv="conda create python=2 ipython pip -n "
+#alias lsenv="conda info -e"
+#alias wo="source activate"
 # alias workon="wo"
-alias foo="echo 'foooooo'"
 alias de="source deactivate"
 
 # Remove python compiled byte-code in either current directory or in a
