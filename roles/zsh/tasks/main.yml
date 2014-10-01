@@ -22,5 +22,5 @@
   when: zsh_prezto
 
 - name: Copy minimal zshrc
-  copy: src=zshrc_minimal dest={{dotfiles_user_home}}/.zshrc
+  copy: src=zshrc_minimal dest=~/.zshrc
   when: not zsh_prezto
