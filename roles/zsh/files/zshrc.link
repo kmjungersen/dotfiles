@@ -3,24 +3,7 @@
 export ZSH=$HOME/dotfiles
 
 # Virtualenvwrapper stuff
-VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
 
-# alias gg='git status'
-# alias gd='git diff'
-# alias gc='git commit -m '
-# alias ga='git add '
-# alias gp='git push '
-
-# alias vu='vagrant up'
-# alias vh='vagrant halt'
-# alias vd='vagrant destroy'
-# alias v='vagrant '
-
-# alias p='python '
-# alias ip='ipython'
-# alias s='ssh-copy-id '
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/COS
@@ -68,3 +51,7 @@ done
 unset config_files
 # Make autoenv always work
 cd .
+
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
