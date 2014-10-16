@@ -16,6 +16,8 @@ alias gd='git diff'
 alias gc='git commit -m '
 alias ga='git add '
 alias gp='git push '
+alias g='git'
+alias gco='git checkout -b'
 
 alias vu='vagrant up'
 alias vh='vagrant halt'
