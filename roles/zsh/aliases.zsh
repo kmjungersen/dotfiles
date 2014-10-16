@@ -1,6 +1,8 @@
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 
+alias aa='vim ~/dotfiles/roles/zsh/aliases.zsh'
+
 alias cl="clear"
 alias c="clear"
 alias pg='ps -ef | grep'
@@ -23,3 +25,7 @@ alias v='vagrant '
 alias p='python '
 alias ip='ipython'
 alias s='ssh-copy-id '
+
+alias cd..='cd ..'
+alias cd...='cd .. && cd ..'
+alias cd....='cd... && cd..'
