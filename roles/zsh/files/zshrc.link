@@ -54,4 +54,5 @@ cd .
 
 VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
