@@ -1,6 +1,6 @@
 con () {
     echo "Activating miniconda"
-    source $HOME/miniconda/bin/activate ${1:-root}
+    source $HOME/anaconda/bin/activate ${1:-root}
 }
 
 coff () {
@@ -9,7 +9,7 @@ coff () {
     typeset _p
     for _p in $path
     do
-        if [[ $_p != $HOME/miniconda/* ]]
+        if [[ $_p != $HOME/anaconda/* ]]
         then
             _path+=$_p
         fi
