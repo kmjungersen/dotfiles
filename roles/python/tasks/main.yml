@@ -1,7 +1,7 @@
 
-- name: Check if miniconda is installed
-  stat: path="{{ '~/miniconda' | expanduser }}"
-  register: miniconda_stat
+- name: Check if anaconda is installed
+  stat: path="{{ '~/anaconda' | expanduser }}"
+  register: anaconda_stat
 
 - include: install.yml
-  when: not miniconda_stat.stat.exists
+  when: not anaconda_stat.stat.exists

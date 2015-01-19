@@ -1,18 +1,18 @@
 
 - name: Get miniconda for Mac OSX
   get_url:
-    url: http://repo.continuum.io/miniconda/Miniconda3-3.6.0-MacOSX-x86_64.sh
-    dest: /tmp/miniconda.sh
+    url: http://09c8d0b2229f813c1b93-c95ac804525aac4b6dba79b00b39d1d3.r79.cf1.rackcdn.com/Anaconda-2.1.0-MacOSX-x86_64.sh
+    dest: /tmp/anaconda.sh
   when: ansible_os_family == "Darwin"
 
 # 64-bit linux installer
-- name: Get miniconda for Linux
-  get_url:
-    url: http://repo.continuum.io/miniconda/Miniconda3-3.6.0-Linux-x86_64.sh
-    dest: /tmp/miniconda.sh
-  when: ansible_os_family == "RedHat" or ansible_os_family == "Debian"
+#- name: Get miniconda for Linux
+#  get_url:
+#    url: http://repo.continuum.io/miniconda/Miniconda3-3.6.0-Linux-x86_64.sh
+#    dest: /tmp/miniconda.sh
+#  when: ansible_os_family == "RedHat" or ansible_os_family == "Debian"
 
 - name: Run the miniconda installer
-  command: bash /tmp/miniconda.sh -b -p ~/miniconda
+  command: bash /tmp/anaconda.sh -b -p ~/anaconda
   args:
-    creates: "{{ '~/miniconda' | expanduser}}"
+    creates: "{{ '~/anaconda' | expanduser}}"

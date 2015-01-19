@@ -1,5 +1,5 @@
 con () {
-    echo "Activating miniconda"
+    echo "Activating anaconda"
     source $HOME/anaconda/bin/activate ${1:-root}
 }
 
