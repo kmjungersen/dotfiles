@@ -29,6 +29,7 @@ alias v='vagrant '
 
 alias p='python '
 alias ip='ipython'
+alias ipnb='ipython notebook'
 alias s='ssh-copy-id '
 
 alias cd..='cd ..'
@@ -37,3 +38,7 @@ alias cd....='cd... && cd..'
 
 alias aliases='vim ~/dotfiles/roles/zsh/aliases.zsh'
 alias dotvim='cd ~/dotfiles && vim'
+
+alias envs="ls ~/anaconda/envs"
+
+alias ptt='pt -v'

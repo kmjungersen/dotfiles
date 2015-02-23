@@ -5,15 +5,15 @@
 - name: Set up local development environment
   hosts: local
   roles:
-    - git
-    - package_manager
-    - zsh
-    - vim
-#    - python
-    - hub
-    - autojump
-    - autoenv
-    - ag
-    - tmux
-    - {role: osx, when: ansible_os_family == "Darwin"}
+#    - git
+#    - package_manager
+#    - zsh
+#    - vim
+    - python
+#    - hub
+#    - autojump
+#    - autoenv
+#    - ag
+#    - tmux
+#    - {role: osx, when: ansible_os_family == "Darwin"}
 
