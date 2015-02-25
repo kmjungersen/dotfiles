@@ -40,5 +40,10 @@ alias aliases='vim ~/dotfiles/roles/zsh/aliases.zsh'
 alias dotvim='cd ~/dotfiles && vim'
 
 alias envs="ls ~/anaconda/envs"
+alias rmenv="conda remove --all -n "
 
 alias ptt='pt -v'
+
+alias pc='/usr/local/bin/charm '
+
+
