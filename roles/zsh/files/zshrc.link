@@ -51,7 +51,9 @@ unset config_files
 # Make autoenv always work
 cd .
 
-VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-export WORKON_HOME=~/.virtualenvs
-export PROJECT_HOME=WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
+# Virtualenv wrapper stuff, which I no longer use, but want to keep around for some reason...
+
+# VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+# export WORKON_HOME=~/.virtualenvs
+# export PROJECT_HOME=WORKON_HOME
+# source /usr/local/bin/virtualenvwrapper.sh
