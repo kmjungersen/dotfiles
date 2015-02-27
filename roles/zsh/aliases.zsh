@@ -42,6 +42,8 @@ alias dotvim='cd ~/dotfiles && vim'
 alias envs="ls ~/anaconda/envs"
 alias rmenv="conda remove --all -n "
 
+alias pm="python manage.py"
+
 alias ptt='pt -v'
 
 alias pc='/usr/local/bin/charm '
