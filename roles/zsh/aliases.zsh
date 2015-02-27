@@ -45,5 +45,4 @@ alias rmenv="conda remove --all -n "
 alias ptt='pt -v'
 
 alias pc='/usr/local/bin/charm '
-
-
+alias sub='subl'
