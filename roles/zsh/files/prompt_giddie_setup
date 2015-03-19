@@ -16,7 +16,7 @@
 
 # Hooks for vcs_info
 function +vi-set_novcs_prompt_symbol() {
-  _prompt_giddie_symbol=')'
+  _prompt_giddie_symbol='%B%F{red}❯%F{yellow}❯%F{green}❯%f%b'
 }
 function +vi-set_vcs_prompt_symbol() {
   _prompt_giddie_symbol='%B%F{red}❯%F{yellow}❯%F{green}❯%f%b'
