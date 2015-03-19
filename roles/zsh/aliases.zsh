@@ -48,3 +48,5 @@ alias ptt='pt -v'
 
 alias pc='/usr/local/bin/charm '
 alias sub='subl'
+
+alias manage='python manage.py'
