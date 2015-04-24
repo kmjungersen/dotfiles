@@ -49,4 +49,7 @@ alias ptt='pt -v'
 alias pc='/usr/local/bin/charm '
 alias sub='subl'
 
-alias manage='python manage.py'
+alias manage='python manage.py '
+alias managee='python ./manage.py '
+
+alias header='python ~/sandbox/pyheader/pyheader/main.py'
