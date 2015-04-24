@@ -1,30 +1,66 @@
 #!/usr/bin/python
 
 """
-A simple Python Executable for opening the current directory's github page.
+A simple Python Executable for opening the current git repo's github page.
 
-NOTE: The directory name must be the same as the repo name in order for this
-script to work!
+Although it defaults to the first remote, simply specify which remote like so:
+
+Usage:
+
+    $ repo.py [remote]
+
+Example:
+
+    $ repo.py origin
 
 (c) Kurtis M Jungersen
 """
 
 import os
+import re
+import sys
 import webbrowser
+import subprocess
 
-GIT_USER = 'kmjungersen'
+default_remote = ''
 
-base_url = 'https://github.com/{user}/{repo}'
+remotes_raw = subprocess.check_output('git remote -v', shell=True)
 
-cwd = os.getcwd()
+remote_list_raw = remotes_raw.split('\n')
 
-cwd_split = cwd.split('/')
+remotes = {}
 
-repo = cwd_split[-1]
+for remote_string_raw in remote_list_raw:
 
-url = base_url.format(
-    user=GIT_USER,
-    repo=repo,
-)
+    if remote_string_raw != '':
 
-webbrowser.open_new_tab(url)
+        remote_string = remote_string_raw.split(' ')
+
+        remote_parts = remote_string[0].split('\t')
+
+        import ipdb
+        # ipdb.set_trace()
+
+        remote_name = remote_parts[0]
+
+        default_remote = remote_name
+
+        remote_url = remote_parts[1].replace('.git', '')
+
+        remotes[remote_name] = remote_url
+
+    default_remote = remote_parts[0]
+
+try:
+    which_remote = sys.argv[1]
+
+except IndexError:
+    which_remote = default_remote
+
+url = remotes.get(which_remote)
+
+if url:
+    webbrowser.open_new_tab(url)
+
+else:
+    exit('Error: invalid remote name!')
