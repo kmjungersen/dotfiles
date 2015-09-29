@@ -1,5 +1,2 @@
-
 echo "Starting deployment..."
-workon ansible
-echo "Using the following environment: " && wp
 ansible-playbook -u vagrant -i hosts -s -vvvv site.yml
